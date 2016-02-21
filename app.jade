@@ -1,0 +1,22 @@
+head
+ title JBLY
+body
+ +head
+ +layout
+template(name="head")
+ nav.navbar
+ a.navbar-brand JBLY
+template(name="layout")
+ .jobs
+  table.table
+   thead
+    tr
+    th Company
+    th Title
+    th Location
+   tbody
+    each job
+    tr
+     td {{company}}
+     td {{title}}
+     td {{location}}
