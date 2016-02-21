@@ -3,10 +3,12 @@ head
 body
  +head
  +layout
-mixin head
+
+template(name="head")
  nav.navbar
  a.navbar-brand JBLY
-mixin layout
+
+template(name="layout")
  .jobs
   table.table
    thead
@@ -16,7 +18,7 @@ mixin layout
     th Location
    tbody
     each job
-    tr
-     td {{company}}
-     td {{title}}
-     td {{location}}
+     tr
+      td {{company}}
+      td {{title}}
+      td {{location}}
