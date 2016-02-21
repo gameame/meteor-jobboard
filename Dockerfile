@@ -24,6 +24,8 @@ COPY . /opt/meteor-jobboard
 
 WORKDIR /opt/meteor-jobboard
 
+RUN meteor create .
+
 RUN meteor add mquandalle:jade coffeescript http bootswatch:paper
 
 CMD meteor
