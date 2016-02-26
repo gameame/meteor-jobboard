@@ -2,20 +2,20 @@ head
  title JBLY
 body
  +head
- +layout
+ +jobs
 
 template(name="head")
- nav.navbar
- a.navbar-brand JBLY
+ nav.navbar.navbar-inverse
+  a.navbar-brand JBLY
 
-template(name="layout")
+template(name="jobs")
  .jobs
   table.table
    thead
     tr
-    th Company
-    th Title
-    th Location
+     th Company
+     th Title
+     th Location
    tbody
     each job
      tr

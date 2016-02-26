@@ -8,9 +8,9 @@ if Meteor.isServer
 if Meteor.isClient
  Template.jobs.rendered = ->
   Jobs.remove({})
-  githubjobs = Meteor.call "githubJobs", (error, results) ->
-  Jobs.insert job for job in results.data
+  Meteor.call "githubJobs", (error, results) ->
+   Jobs.insert job for job in results.data
 
-Template.jobs.helpers
- job:
-  Jobs.find();
+ Template.jobs.helpers
+  job:
+   Jobs.find()
